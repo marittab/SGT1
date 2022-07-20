@@ -9,10 +9,10 @@ public class Homework3 {
         int number2 = scanner.nextInt();
         System.out.println("Please enter your 3rd number");
         int number3 = scanner.nextInt();
-        if (number > number3 && number > number2){
-            System.out.println("The greatest number is: "+ number);
+        if (number > number3 && number > number2) {
+            System.out.println("The greatest number is: " + number);
 
-        } else if(number2 > number && number2 > number3){
+        } else if (number2 > number && number2 > number3) {
             System.out.println("The greatest number is: " + number2);
 
         } else {
@@ -41,10 +41,10 @@ public class Homework3 {
         }else if (num2 > num3 && num2 > num1){
             System.out.println(num2);
         }else if (num3 > num1 && num3 > num2){
-            System.out.println("num3");*/
-        }
+            System.out.println("num3");
+        }*/
 
         //shorter version
-       // System.out.println(Math.max(Math.max(number,number2),number3));
+        // System.out.println(Math.max(Math.max(number,number2),number3));
     }
 }
