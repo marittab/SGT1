@@ -33,5 +33,6 @@ public class ArrayExamples {
             System.out.print(grades[i] + " ");
         }
 
+
     }
 }
