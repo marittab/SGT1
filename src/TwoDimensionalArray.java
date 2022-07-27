@@ -36,10 +36,20 @@ public class TwoDimensionalArray {
         // i-rows;
         // j - columns
         for(int i = 0; i < names.length; i++ ){
-            System.out.println("Row no. " + (i+1));
+            System.out.print("Row no. " + (i+1) + " - ");
             for(int j = 0; j < names[i].length; j++){
-                System.out.println(names[i][j]);
+                System.out.print(names[i][j] + " ");
             }
+            System.out.println();
+        }
+
+        for (String [] tempNames : names) {
+            System.out.print("Row - ");
+            for (String name : tempNames){
+                System.out.print(name + " ");
+
+            }
+            System.out.println();
         }
     }
 }
