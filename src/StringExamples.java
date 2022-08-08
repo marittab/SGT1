@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringExamples {
     public static void main(String[] args) {
 
@@ -36,20 +38,21 @@ public class StringExamples {
         //String class methods - indexOf()
         String speakingtext = "This is test value";
         System.out.println(speakingtext.indexOf('e'));//kurš simbols pēc kārtas, sāk ar 0
+        System.out.println(speakingtext.lastIndexOf("e"));
         System.out.println(speakingtext.indexOf(" test "));
 
-        //String class methods - replaceAll()
+        //String class methods - REPLACEALL()
         //Šūdas
 
-        String textforTV = "This phone is complete šūdas. And this case also is šūdas";
-        System.out.println(text1.replaceAll("šūdas", "Š***s"));
+        String textForTV = "This phone is complete šūdas. And this case also is šūdas.";
+        System.out.println(textForTV.replaceAll("šūdas", "š***s"));
 
         //Character index
-        System.out.println(textforTV.charAt(textforTV.length()-1));
+        System.out.println(textForTV.charAt(textForTV.length()-1));
 
         //Substring
-        System.out.println(textforTV.substring(5));
-        System.out.println(textforTV.substring(5,12));
+        System.out.println(textForTV.substring(5));//sākot no šī simbola
+        System.out.println(textForTV.substring(5,12)); //no pirmā līdz otrajam
 
         //Parsing
         //Converting String to primitive Data type
@@ -66,5 +69,24 @@ public class StringExamples {
         System.out.println(Double.parseDouble(doubleValue));
         System.out.println(Boolean.parseBoolean(boolValue));
         System.out.println(Long.parseLong(longValue));
+
+        //Trim method (nodzēš tukšumus priekšā vai aizmugurē)
+        System.out.println("  This is test   ".trim());
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter password (qwert*)");
+        String pswd = scanner.nextLine().trim().toLowerCase();
+
+
+        if (pswd.equals("qwerty")){
+            System.out.println("Password correct");
+        } else {
+            System.out.println("Incorrect password");
+
+        }
+
+
+
+
     }
 }
