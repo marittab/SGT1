@@ -25,11 +25,11 @@ public class Homework3 {
 
 /*
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Input the 1st number");
+            System.out.println("Basics.Input the 1st number");
             int nr1 = scanner.nextInt();
-            System.out.println("Input the 2nd number");
+            System.out.println("Basics.Input the 2nd number");
             int nr2 = scanner.nextInt();
-            System.out.println("Input 3rd number");
+            System.out.println("Basics.Input 3rd number");
             int nr3 = scanner.nextInt();
 
             int max1 = Math.max(nr1,nr2);
