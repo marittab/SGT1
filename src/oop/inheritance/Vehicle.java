@@ -11,7 +11,7 @@ public class Vehicle {
     }
 }
 
-class Bike extends Vehicle{ //apakšklase Vehicle klasei
+class  Bike extends Vehicle{ //apakšklase Vehicle klasei
 
     public void honk() { // Pārraksta hank metodi iekš Bike klases
         System.out.println("Pff Pff");
